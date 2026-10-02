@@ -1,0 +1,26 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Alumnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Alumnos</h1>
+        <p>Haz clic en el botón para consultar la base de datos:</p>
+        
+        <!-- Formulario que envía la petición al Servlet -->
+        <form action="consultar" method="GET">
+            <button type="submit">Cargar Datos de Alumnos</button>
+        </form>
+
+        <div id="resultado">
+            <!-- La tabla se cargará aquí al pulsar el botón -->
+        </div>
+    </div>
+</body>
+</html>
